@@ -1,0 +1,64 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<nav
+    class="fixed inset-x-0 top-0 z-30 container mx-auto px-6 md:px-10 lg:px-12 w-full border border-gray-800 bg-gray/80 py-2 shadow backdrop-blur-lg sm:top-4 rounded-b-xl sm:rounded-3xl"
+>
+    <div class="flex items-center justify-between">
+        <Logo />
+
+        <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+            <a
+                aria-current="page"
+                class="inline-block rounded-full px-4 py-1.5 text-sm text-gray-100 font-medium transition-all duration-200 border border-transparent hover:bg-gray-300 hover:text-gray-800"
+                href="#talents">Talents</a
+            >
+            <a
+                aria-current="page"
+                class="inline-block rounded-full px-4 py-1.5 text-sm text-gray-100 font-medium transition-all duration-200 border border-transparent hover:bg-gray-300 hover:text-gray-800"
+                href="#catalogues">Catalogues</a
+            >
+            <a
+                aria-current="page"
+                class="inline-block rounded-full px-4 py-1.5 text-sm text-gray-100 font-medium transition-all duration-200 border border-transparent hover:bg-gray-300 hover:text-gray-800"
+                href="#about">About</a
+            >
+            <a
+                class="inline-block rounded-full px-4 py-1.5 text-sm text-gray-100 font-medium transition-all duration-200 border border-transparent hover:bg-gray-300 hover:text-gray-800"
+                href="#contact">Contact</a
+            >
+        </div>
+        <div class="flex items-center justify-end gap-3 md:hidden">
+            <button class="text-gray-500 hover:text-gray-600" id="open-sidebar">
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- <div class="flex items-center justify-end gap-3">
+						<div class="relative inline-flex group">
+							<div
+								class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#840ABE] to-[#F50C81] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"
+							>
+							</div>
+							<a
+								href="#"
+								class="relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white transition-all duration-200 bg-gray-950/70 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+								role="button"
+								>Contact
+							</a>
+						</div>
+					</div> -->
+    </div>
+</nav>

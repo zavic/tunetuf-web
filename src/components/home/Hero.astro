@@ -1,0 +1,80 @@
+---
+import "@assets/styles/carousel.css";
+import Hero1 from "@assets/images/hero/hero-1.jpg";
+import Hero2 from "@assets/images/hero/hero-2.jpg";
+import Hero3 from "@assets/images/hero/hero-3.jpg";
+import Carousel from "@components/Carousel.astro";
+---
+
+<section id="home">
+    <div class="h-14"></div>
+
+    <!-- Carousel container -->
+    <div class="carousel-container relative">
+        <!-- Navigation buttons -->
+        <button
+            id="carousel-prev"
+            class="nav-button absolute left-2 sm:left-2 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center z-20 text-gray-300 touch-manipulation"
+        >
+            <svg
+                class="w-5 h-5 sm:w-6 sm:h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <button
+            id="carousel-next"
+            class="nav-button absolute right-2 sm:right-2 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center z-20 text-gray-300 touch-manipulation"
+        >
+            <svg
+                class="w-5 h-5 sm:w-6 sm:h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+        <!-- Carousel track -->
+        <div
+            class="carousel-track relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden"
+        >
+            <!-- Carousel items -->
+            <Carousel title="SIPIL" description="Javarisk" img={Hero1} link="https://www.youtube.com/watch?v=YZ1dPavceg4" />
+            <Carousel title="Sangkuni" description="Javarisk" img={Hero2} link="https://www.youtube.com/watch?v=cC8ulX0FBws" />
+            <Carousel title="Lalai" description="HildaPixel" img={Hero3} link="https://www.youtube.com/watch?v=Ajuz6APSKQk" />
+        </div>
+
+        <!-- Indicators -->
+        <div
+            class="absolute -bottom-3 sm:bottom-2 lg:bottom-4 xl:bottom-6 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-2 z-20"
+        >
+            <button
+                class="carousel-indicator w-8 sm:w-12 h-1 sm:h-1.5 rounded-full bg-white/40 hover:bg-white/60 transition-colors"
+                title="Go to slide 1"></button>
+            <button
+                class="carousel-indicator w-8 sm:w-12 h-1 sm:h-1.5 rounded-full bg-white/20 hover:bg-white/60 transition-colors"
+                title="Go to slide 2"></button>
+            <button
+                class="carousel-indicator w-8 sm:w-12 h-1 sm:h-1.5 rounded-full bg-white/20 hover:bg-white/60 transition-colors"
+                title="Go to slide 3"></button>
+        </div>
+    </div>
+</section>
+
+<script>
+    import "@assets/scripts/carousel.js";
+</script>

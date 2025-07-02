@@ -1,0 +1,53 @@
+---
+import CardCatalog from "@components/CardCatalog.astro";
+import ImgSangkuni from "@assets/images/catalogues/javarisk-sangkuni.jpg";
+import ImgSipil from "@assets/images/catalogues/javarisk-sipil.jpg";
+import ImgLalai from "@assets/images/catalogues/hildapixel-lalai.jpg";
+import ImgSendiri from "@assets/images/catalogues/sxwaypi-sendiri.jpg";
+---
+
+<section id="catalogues">
+    <div class="h-12 sm:h-20"></div>
+    <div class="pb-8">
+        <p
+            class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
+        >
+            Check our
+        </p>
+        <h2 class="text-4xl font-bold">Catalogues</h2>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <CardCatalog
+            title="Biarkan Aku Sendiri"
+            artist="Sxwaypi"
+            year="2025"
+            img={ImgSendiri}
+            link="https://music.youtube.com/watch?v=CNeswyGg9Ew&si=fOzu0u0Imt9Npoky"
+        />
+        <CardCatalog
+            title="Sangkuni"
+            artist="Javarisk"
+            year="2024"
+            img={ImgSangkuni}
+            link="https://music.youtube.com/watch?v=w_6HITa4Xv8&si=J5K0Gfwd7D7KCAHJ"
+        />
+        <CardCatalog
+            title="Sipil"
+            artist="Javarisk"
+            year="2023"
+            img={ImgSipil}
+            link="https://music.youtube.com/watch?v=dWTQblRgE1M&si=z-rP8sib6MTNkDRt"
+        />
+        <CardCatalog
+            title="Lalai"
+            artist="Hildapixel"
+            year="2021"
+            img={ImgLalai}
+            link="https://www.youtube.com/watch?v=Ajuz6APSKQk"
+        />
+    </div>
+    <!-- <div class="flex items-center justify-center mt-4">
+        <a href="/catalogues" class="px-8 py-3 font-bold border border-gray-800 rounded-full hover:bg-gray-200 hover:text-gray-800">View more Catalogues</a>
+    </div> -->
+</section>

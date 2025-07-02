@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+
+const { name, talent, description, img, link } = Astro.props;
+const isSinger = talent.toLowerCase() === "singer";
+const isGroupBand = talent.toLowerCase() === "group band";
+
+const classTalent = isSinger
+    ? "text-xs font-medium me-2 px-2.5 py-0.5 rounded-full bg-pink-900 text-pink-300"
+    : isGroupBand
+      ? "text-xs font-medium me-2 px-2.5 py-0.5 rounded-full bg-purple-900 text-purple-300"
+      : "text-xs font-medium me-2 px-2.5 py-0.5 rounded-full bg-amber-900 text-amber-300";
+---
+
+<a href={link} class="group relative block bg-black rounded-lg overflow-hidden">
+    <Image
+        src={img}
+        alt={name}
+        class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50"
+    />
+
+    <div class="relative p-4">
+        <span class={classTalent}>{talent}</span>
+
+        <p class="text-xl font-bold text-white sm:text-2xl">{name}</p>
+
+        <div class="mt-20 sm:mt-48 lg:mt-64">
+            <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+                <p class="text-sm text-white">
+                    {description}
+                </p>
+            </div>
+        </div>
+    </div>
+</a>
