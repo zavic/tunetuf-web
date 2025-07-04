@@ -8,25 +8,24 @@ import Footer from "@components/Footer.astro";
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-	<head>
-		<Head />
-	</head>
-	<body class="bg-gray-900 text-gray-300">
-		<div class="bg-gray-900">
-			<!-- Navbar -->
-			<Navbar />
+    <head>
+        <Head />
+    </head>
+    <body class="bg-gray-900 text-gray-300">
+        <!-- Navbar -->
+        <Navbar />
 
-			<!-- Main Content -->
-			<main>
-				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<slot />
-				</div>
-			</main>
+        <!-- Main Content -->
+        <main>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <slot />
+            </div>
+        </main>
 
-			<Footer />
-		</div>
-		<script>
-			import "@assets/scripts/navbar.js";
-		</script>
-	</body>
+        <Footer />
+
+        <script>
+            import "@assets/scripts/navbar.js";
+        </script>
+    </body>
 </html>

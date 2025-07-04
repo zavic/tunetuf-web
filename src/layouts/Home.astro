@@ -12,19 +12,18 @@ import Footer from "@components/Footer.astro";
 		<Head />
 	</head>
 	<body class="bg-gray-900 text-gray-300">
-		<div class="bg-gradient-to-br from-gray-900 to-black">
-			<!-- Navbar -->
-			<Navbar />
+		<!-- Navbar -->
+		<Navbar />
 
-			<!-- Main Content -->
-			<main>
-				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<slot />
-				</div>
-			</main>
+		<!-- Main Content -->
+		<main>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<slot />
+			</div>
+		</main>
 
-			<Footer />
-		</div>
+		<Footer />
+
 		<script>
 			import "@assets/scripts/navbar.js";
 		</script>

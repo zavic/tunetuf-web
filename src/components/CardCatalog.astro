@@ -7,14 +7,6 @@ const { title, artist, year, img, link } = Astro.props;
 <a class="rounded-xl hover:p-3 transition-all hover:bg-gray-800" href={link} target="_blank">
     <div class="rounded-xl aspect-square w-full overflow-hidden">
         <Image src={img} alt={title} class="w-full h-full object-cover" />
-        <!-- <img
-            src="https://loremflickr.com/400/400/girl"
-            alt="Exercise"
-            class="w-full h-full object-cover"
-            width="400"
-            height="400"
-            loading="lazy"
-        /> -->
     </div>
     <div class="py-3">
         <p class="text-sm">{title}</p>
