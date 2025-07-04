@@ -4,10 +4,12 @@ import ImgHamada from "@assets/images/talents/hamada.jpg";
 import ImgJavarisk from "@assets/images/talents/javarisk.jpg";
 import ImgNext from "@assets/images/talents/next.jpeg";
 import CardArtist from "@components/CardArtist.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
-<section id="talents">
-    <div class="h-18"></div>
+<Layout>
+    <div class="h-8"></div>
+
     <div class="pb-8">
         <p
             class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
@@ -43,14 +45,7 @@ import CardArtist from "@components/CardArtist.astro";
             talent="???"
             description="Want to be the next talent? Contact us to showcase your skills and join our talented roster!"
             img={ImgNext}
-            link="#contact"
+            link="/contact"
         />
     </div>
-    <div class="flex items-center justify-center mt-4">
-        <a
-            href="/talents"
-            class="px-8 py-3 font-bold border border-gray-800 rounded-full hover:bg-gray-200 hover:text-gray-800"
-            >View more Talents</a
-        >
-    </div>
-</section>
+</Layout>

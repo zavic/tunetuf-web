@@ -1,0 +1,101 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import ImgJavarisk from "@assets/images/talents/javarisk.jpg";
+---
+
+<Layout>
+    <div class="h-8"></div>
+
+    <div class="flex flex-col md:flex-row relative">
+        <div class="mr-10">
+            <Image
+                src={ImgJavarisk}
+                alt="hildapixel"
+                class="rounded-lg aspect-square object-cover"
+            />
+        </div>
+        <div class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
+            <h1 class="text-white font-bold text-3xl mt-6 mb-8">Javarisk</h1>
+
+            <p
+                class="text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10"
+            >
+                Javarisk is a dynamic group band known for their energetic
+                performances and diverse musical styles that captivate fans
+                everywhere. With a unique blend of genres and a passion for
+                music, they create an unforgettable experience for their
+                audience.
+            </p>
+
+            <div
+                id="social"
+                class="flex flex-wrap justify-start items-center gap-4"
+            >
+                <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.instagram.com/javarisk/"
+                    class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
+                >
+                    <svg
+                        class="h-6 w-6 text-blue-500"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Follow me on Instagram</span>
+                </a>
+                <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.youtube.com/@Javarisk"
+                    class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
+                >
+                    <svg
+                        class="h-5 w-5 text-red-500"
+                        fill="currentColor"
+                        viewBox="0 0 32 32"
+                    >
+                        <path
+                            d="M12.932 20.459v-8.917l7.839 4.459zM30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"
+                        ></path>
+                    </svg>
+                    <span>Visit my YouTube Channel</span>
+                </a>
+                <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://open.spotify.com/intl-id/artist/4P1nfk1jpv1lZeIlZnXxrd"
+                    class="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
+                >
+                    <svg viewBox="0 0 48 48" class="h-6 w-6">
+                        <g
+                            transform="translate(-200.000000, -460.000000)"
+                            fill="#00DA5A"
+                        >
+                            <path
+                                d="M238.16,481.36 C230.48,476.8 217.64,476.32 210.32,478.6 C209.12,478.96 207.92,478.24 207.56,477.16 C207.2,475.96 207.92,474.76 209,474.4 C217.52,471.88 231.56,472.36 240.44,477.64 C241.52,478.24 241.88,479.68 241.28,480.76 C240.68,481.6 239.24,481.96 238.16,481.36 M237.92,488.08 C237.32,488.92 236.24,489.28 235.4,488.68 C228.92,484.72 219.08,483.52 211.52,485.92 C210.56,486.16 209.48,485.68 209.24,484.72 C209,483.76 209.48,482.68 210.44,482.44 C219.2,479.8 230,481.12 237.44,485.68 C238.16,486.04 238.52,487.24 237.92,488.08 M235.04,494.68 C234.56,495.4 233.72,495.64 233,495.16 C227.36,491.68 220.28,490.96 211.88,492.88 C211.04,493.12 210.32,492.52 210.08,491.8 C209.84,490.96 210.44,490.24 211.16,490 C220.28,487.96 228.2,488.8 234.44,492.64 C235.28,493 235.4,493.96 235.04,494.68 M224,460 C210.8,460 200,470.8 200,484 C200,497.2 210.8,508 224,508 C237.2,508 248,497.2 248,484 C248,470.8 237.32,460 224,460"
+                                id="Spotify"
+                            >
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Listen on Spotify</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="h-8"></div>
+    <iframe
+        src="https://open.spotify.com/embed/artist/4P1nfk1jpv1lZeIlZnXxrd?utm_source=generator&theme=0"
+        width="100%"
+        height="380"
+        allowfullscreen="allowfullscreen"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    ></iframe>
+</Layout>
