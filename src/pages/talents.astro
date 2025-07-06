@@ -1,51 +1,11 @@
 ---
-import ImgHilda from "@assets/images/talents/hilda.jpg";
-import ImgHamada from "@assets/images/talents/hamada.jpg";
-import ImgJavarisk from "@assets/images/talents/javarisk.jpg";
-import ImgNext from "@assets/images/talents/next.jpeg";
-import CardArtist from "@components/CardArtist.astro";
 import Layout from "@layouts/Layout.astro";
+import HomeTalents from "@components/home/Talents.astro";
 ---
 
-<Layout>
-    <div class="h-8"></div>
-
-    <div class="pb-8">
-        <p
-            class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
-        >
-            Our
-        </p>
-        <h2 class="text-4xl font-bold">Talent</h2>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <CardArtist
-            name="Hildapixel"
-            talent="Singer"
-            link="/talents/hildapixel"
-            description="Hildapixel is a talented singer and content creator known for her unique voice and captivating performances."
-            img={ImgHilda}
-        />
-        <CardArtist
-            name="Hamada"
-            talent="Singer"
-            link="/talents/hamada"
-            description="Hamada is a renowned singer with a powerful voice and a passion for music that resonates with audiences worldwide."
-            img={ImgHamada}
-        />
-        <CardArtist
-            name="Javarisk"
-            talent="Group Band"
-            link="/talents/javarisk"
-            description="Javarisk is a dynamic group band known for their energetic performances and diverse musical styles that captivate fans everywhere."
-            img={ImgJavarisk}
-        />
-        <CardArtist
-            name="Next Talent"
-            talent="???"
-            description="Want to be the next talent? Contact us to showcase your skills and join our talented roster!"
-            img={ImgNext}
-            link="/contact"
-        />
-    </div>
+<Layout
+   title="Talents"
+   description="Discover the talented individuals behind Tunetuf, each with unique skills and contributions to the community."
+>
+   <HomeTalents />
 </Layout>

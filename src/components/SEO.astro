@@ -1,0 +1,52 @@
+---
+const { title, description, image, canonicalURL, type = 'website' } = Astro.props;
+
+const siteTitle = "Tunetuf";
+const siteDescription =
+    "Tunetuf is an indie record label founded on the passion to support and develop local Indonesian music talents.";
+const defaultImage = new URL("/tunetuf.png", Astro.site);
+
+
+let finalTitle;
+
+if (title) {
+    finalTitle = `${title} | ${siteTitle}`;
+} else {
+    finalTitle = siteTitle;
+}
+
+// Gunakan gambar yang diberikan, atau fallback ke gambar default
+const finalImage = image ? new URL(image, Astro.site) : defaultImage;
+
+// Gunakan URL kanonis yang diberikan, atau fallback ke URL halaman saat ini
+const finalCanonicalURL = canonicalURL || Astro.url.href;
+---
+
+<title>{finalTitle}</title>
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<meta charset="utf-8" />
+<meta name="description" content={description || siteDescription} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- URL Kanonis (Mencegah Konten Duplikat) -->
+<link rel="canonical" href={finalCanonicalURL} />
+
+<!-- Open Graph (Untuk Pratinjau di Media Sosial seperti Facebook, LinkedIn) -->
+<meta property="og:title" content={finalTitle} />
+<meta property="og:description" content={description || siteDescription} />
+<meta property="og:url" content={finalCanonicalURL} />
+<meta property="og:image" content={finalImage.href} />
+<meta property="og:image:alt" content={`Image preview for ${title}`} />
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={siteTitle} />
+
+<!-- Twitter Cards (Untuk Pratinjau di X/Twitter) -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={finalTitle} />
+<meta name="twitter:description" content={description || siteDescription} />
+<meta name="twitter:image" content={finalImage.href} />
+<meta name="twitter:image:alt" content={`Image preview for ${title}`} />

@@ -1,45 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import HomeAbout from "@components/home/About.astro";
 ---
 
-<Layout>
-    <div class="h-18"></div>
-    <div class="grid gap-8 md:grid-cols-3">
-        <div class="flex flex-col justify-center md:col-span-2 z-10">
-            <p
-                class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
-            >
-                About us
-            </p>
-            <h2 class="text-4xl font-bold">Record Music Label</h2>
-            <div class="h-6"></div>
-            <p class="text-lg text-gray-400 mb-3">
-                Tunetuf is an indie record label founded on the passion to
-                support and develop local Indonesian music talents.
-            </p>
-            <p class="text-lg text-gray-400 mb-3">
-                We believe that every musician has a unique story that deserves
-                to be heard by the world. With a personal and creative approach,
-                we help artists express their work authentically without
-                limitations. Founded in 2025, Tunetuf has become a home for
-                musicians from various genres, from pop, rock, folk, electronic,
-                to experimental.
-            </p>
-            <p class="text-lg text-gray-400 mb-3">
-                We are committed to providing a space for creativity,
-                collaboration, and access to a wider music industry network,
-                without sacrificing the independence and idealism of the
-                artists. In addition to music production, we are also active in
-                organizing events, workshops, and cross-community collaborations
-                to strengthen the independent music ecosystem in Indonesia.
-            </p>
-        </div>
-
-        <div class="static pt-8">
-            <div
-                class="absolute right-0 rounded-l-full bg-gradient-to-br from-gray-900 to-black md:w-120 h-96"
-            >
-            </div>
-        </div>
-    </div>
+<Layout
+    title="About"
+    description="Learn about Tunetuf, our mission, and the talented individuals behind the platform."
+>
+    <HomeAbout />
 </Layout>

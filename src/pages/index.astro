@@ -1,5 +1,5 @@
 ---
-import Home from "../layouts/Home.astro";
+import Layout from "../layouts/Layout.astro";
 
 import Hero from "../components/home/Hero.astro";
 import Talents from "../components/home/Talents.astro";
@@ -8,20 +8,33 @@ import About from "../components/home/About.astro";
 import Contact from "../components/home/Contact.astro";
 ---
 
-<Home>
+<Layout>
 	<!-- Hero Section -->
 	<Hero />
 
 	<!-- Talent section -->
 	<Talents />
+	<div class="flex items-center justify-center mt-4">
+		<a
+			href="/talents"
+			class="px-8 py-3 font-bold border border-gray-800 rounded-full hover:bg-gray-200 hover:text-gray-800"
+			>View more Talents</a
+		>
+	</div>
 
 	<!-- Catalog Section -->
 	<Catalogues />
+	<div class="flex items-center justify-center mt-4">
+		<a
+			href="/catalogues"
+			class="px-8 py-3 font-bold border border-gray-800 rounded-full hover:bg-gray-200 hover:text-gray-800"
+			>View more Catalogues</a
+		>
+	</div>
 
 	<!-- About section -->
 	<About />
 
 	<!-- Contact section -->
 	<Contact />
-
-</Home>
+</Layout>
