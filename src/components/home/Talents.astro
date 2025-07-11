@@ -1,9 +1,9 @@
 ---
-import ImgHilda from "@assets/images/talents/hilda.jpg";
+import ImgHadi from "@assets/images/talents/hadi.jpg";
 import ImgHamada from "@assets/images/talents/hamada.jpg";
 import ImgJavarisk from "@assets/images/talents/javarisk.jpg";
-import ImgNext from "@assets/images/talents/next.jpeg";
-import CardArtist from "@components/CardArtist.astro";
+import ImgYusuf from "@assets/images/talents/yusuf.jpg";
+import CardTalent from "@components/CardTalent.astro";
 ---
 
 <section id="talents">
@@ -17,33 +17,33 @@ import CardArtist from "@components/CardArtist.astro";
         <h2 class="text-4xl font-bold">Talent</h2>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <CardArtist
-            name="Hildapixel"
+        <CardTalent
+            name="Hadi Pratama"
             talent="Singer"
-            link="/talents/hildapixel"
-            description="Hildapixel is a talented singer and content creator known for her unique voice and captivating performances."
-            img={ImgHilda}
+            link="/talents/hadi"
+            description="Hadi Pratama is an Indonesian singer, lyricist, and musician who began his career as a content creator and video editor."
+            img={ImgHadi}
         />
-        <CardArtist
-            name="Hamada"
+        <CardTalent
+            name="Hamada Haikal"
             talent="Singer"
             link="/talents/hamada"
-            description="Hamada is a renowned singer with a powerful voice and a passion for music that resonates with audiences worldwide."
+            description="Hamada Haikal is a singer with a distinctive voice who began his music career in 2024 as a solo artist, initially collaborating as a guest rapper on Javarisk's debut song."
             img={ImgHamada}
         />
-        <CardArtist
+        <CardTalent
             name="Javarisk"
             talent="Group Band"
             link="/talents/javarisk"
-            description="Javarisk is a dynamic group band known for their energetic performances and diverse musical styles that captivate fans everywhere."
+            description="Javarisk is a vocal rap group from Java that embraces the hip hop genre, known for their politically and socially themed lyrics."
             img={ImgJavarisk}
         />
-        <CardArtist
-            name="Next Talent"
-            talent="???"
-            description="Want to be the next talent? Contact us to showcase your skills and join our talented roster!"
-            img={ImgNext}
-            link="#contact"
+        <CardTalent
+            name="Maulana Yusuf"
+            talent="Singer"
+            description="Maulana Yusuf is a composer, songwriter, and lyricist who enjoys crafting simple stories into warm and meaningful music."
+            img={ImgYusuf}
+            link="/talents/yusuf"
         />
     </div>
 </section>

@@ -1,34 +1,52 @@
+---
+import { Image } from "astro:assets";
+import ImgAbout from "@assets/images/about.jpg";
+---
+
 <section id="about">
     <div class="h-18"></div>
+    <!-- Judul -->
+    <div class="mb-4">
+        <p
+            class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
+        >
+            About us
+        </p>
+        <h2 class="text-4xl font-bold">Record Music Label</h2>
+    </div>
     <div class="grid gap-8 md:grid-cols-3">
-        <div class="flex flex-col justify-center md:col-span-2 z-10">
-            <p
-                class="self-start inline font-sans text-xl font-medium text-transparent bg-clip-text bg-gradient-to-br from-[#840ABE] to-[#F50C81]"
-            >
-                About us
+        <!-- Deskripsi -->
+        <div class="order-2 md:order-none md:col-span-2">
+
+            <p class="text-lg text-gray-400 mb-3 indent-10 text-justify">
+                Tunetuf is an independent record label established in 2025, born
+                from a casual conversation that grew into a shared ambition. It
+                focuses primarily on hip hop and pop genres, featuring core
+                artists like Hadi Pratama, Sayyid Zavic, Hamada Haikal, and
+                Maulana Yusuf. creating content with limited tools but immense passion.
             </p>
-            <h2 class="text-4xl font-bold">Record Music Label</h2>
-            <div class="h-6"></div>
-            <p class="text-lg text-gray-400 mb-3">
-                Tunetuf is an indie record label founded on the passion to
-                support and develop local Indonesian music talents.
+            <p class="text-lg text-gray-400 mb-3 indent-10 text-justify">
+                Founded in 2025, Tunetuf began as a small idea that developed
+                into a collective vision to produce honest and daring music.
+                Initially focused on hip hop and pop, Tunetuf built its identity
+                through works that reflect the spirit and concerns of younger
+                generations. Despite limited production resources, the label
+                demonstrates that limitations are no obstacle to creativity.
+                Tunetuf supports core artists such as Hadi Pratama, Sayyid
+                Savic, Hamada Haikal, and Maulana Yusuf. contributing their
+                own distinct musical character. Moving forward, Tunetuf is open
+                to exploring new genres while continuing to deliver relevant yet
+                authentic music.
             </p>
-            <p class="text-lg text-gray-400 mb-3">
-                We believe that every musician has a unique story that deserves
-                to be heard by the world. With a personal and creative approach,
-                we help artists express their work authentically without
-                limitations. Founded in 2025, Tunetuf has become a home for
-                musicians from various genres, from pop, rock, folk, electronic,
-                to experimental.
-            </p>
-            <p class="text-lg text-gray-400 mb-3">
-                We are committed to providing a space for creativity,
-                collaboration, and access to a wider music industry network,
-                without sacrificing the independence and idealism of the
-                artists. In addition to music production, we are also active in
-                organizing events, workshops, and cross-community collaborations
-                to strengthen the independent music ecosystem in Indonesia.
-            </p>
+        </div>
+        <!-- Gambar -->
+        <div class="order-1 md:order-none ">
+            <Image
+                src={ImgAbout}
+                alt="about"
+                loading="eager"
+                class="w-full object-cover rounded-2xl"
+            />
         </div>
     </div>
 </section>

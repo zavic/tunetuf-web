@@ -10,15 +10,22 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
       "@components/*": [
         "src/components/*"
       ],
       "@assets/*": [
         "src/assets/*"
       ],
-      "@layouts/*": [
-        "src/layouts/*"
+      "@scripts/*": [
+        "src/scripts/*"
       ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      
     }
   }
 }
